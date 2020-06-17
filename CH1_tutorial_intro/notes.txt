@@ -1,0 +1,5 @@
+- You can trigger EOF with ctrl-D in terminal. This will execute rest of 
+the program, rather than halting execution as ctrl-C causes.
+
+- "=" assignment operator where you meant "==" comparison operator usually
+results in legal expression--can fail silently unlike Python.
