@@ -1,0 +1,18 @@
+$ gcc -o output_name c_file_to_compile.c
+
+Putting int before main() definition resolves the "return type defaults to 'int'" warning (K&R C's examples don't have this because of changes to C / the compiler since then):
+	int main()
+	{ 
+		foo();
+	}
+
+List local paths to source code of all header files in a given .c source code file:
+$ gcc -H my_c_filename.c
+
+Limit compiler-warning output to syntax errors:
+$ gcc <some command> -fsyntax-only
+
+Inhibit all warning messages:
+	-w
+
+https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html
