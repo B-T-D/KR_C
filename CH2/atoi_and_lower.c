@@ -15,7 +15,7 @@ int atoi(char s[])
 	return n;
 }
 
-/* lower: convert c to lower case; ASCII only */
+/* lower: convert c to lower case; ASCII only (as opposed to EBCDIC...fine for modern unicode)*/
 int lower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
