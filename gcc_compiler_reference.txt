@@ -16,3 +16,19 @@ Inhibit all warning messages:
 	-w
 
 https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html
+
+--Examining the .out file--
+
+View a representation of the machine-code instructions in an .out file created by the compiler:
+	$ hexdump -C myfile
+		- Doesn't need an extension in the command line
+		- This is a Linux command not actually anything to do with gcc compiler syntax
+
+Pure binary with instruction-numbers in hex:
+	$ xxd -b myfile
+
+Hex:
+	$ xxd myfile
+	
+Assembler code:
+	$ objdump -d myfile

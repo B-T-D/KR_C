@@ -36,5 +36,5 @@ int main()
 	n = 511;
 	printf("%d\n", n);
 	
-	printf("%d\n", n & 0177);
+	printf("%d\n", n & 0177); /* Confirmed that this "sets to zero all but the low-order 7 bits of n--output is 127, i.e. seven bits set to one, any higher bits zero. 0...1111111
 }
