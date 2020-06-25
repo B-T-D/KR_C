@@ -1,6 +1,6 @@
 """Assembler instructions for the quicksort program, printed to terminal with
 		$ objdump -d quicksort
-	then pasted to txt."""
+	then pasted to txt. "-d" for "disassembler". """
 
 quicksort:     file format elf64-x86-64
 

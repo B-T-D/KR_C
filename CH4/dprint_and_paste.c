@@ -1,4 +1,4 @@
-/* Example debugging print macro */
+/* Example debugging print macro with # operator, and concatenation with ## operator*/
 
 #include <stdio.h>
 
@@ -17,9 +17,8 @@ int main()
 	
 	printf("%d\n", name);
 	
-	printf("%d\n", paste(na, me)); /* "pastes" the front and back strings together and then evaluates that as the C code. Macros are changes to the code as displayed, not normal C lines */
+	printf("%d\n", paste(na, me)); /* "pastes" the front and back strings together and then evaluates that as the C code. Macros are changes to the code as displayed, not actual executed instructions on objects in memory. Here, to the compiler, this is as if the code was simply printf("%d\n", name); like the first time.*/
 	
-	//printf("%d\n", name);
 	
 	
 }
