@@ -51,7 +51,7 @@ int main()
 	/* Assigning a pointer equal to a different pointer will make that left-side pointer point to the same thing the right-side pointer did: */
 	int *iq;
 	iq = ip;
-	iq = &y;
+	//iq = &y;
 	assert(*iq == *ip);
 	printf("assertion ok\n");
 	
