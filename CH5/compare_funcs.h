@@ -24,6 +24,8 @@ int mystrcmp(char *s, char *t) /* Return <0 if s<t, 0 if s==t, >0 if s>t */
 }
 
 int strcmp_fold(char *s, char *t) /* version of strcmp that ignores case */
+
+/* see also ctype.h builtin toupper(int c) and tolower(int c) functions */
 {
 	for ( ; *s == *t; s++, t++)
 		if (*s == '\0')
