@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-/* qsort: sort v[left]...v[right] into increasing order */
+/* qsort: sort array of integers v[left]...v[right] into increasing order */
 void qsort(int v[], int left, int right)
 {
 	int i, last;
