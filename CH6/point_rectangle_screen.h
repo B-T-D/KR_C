@@ -26,8 +26,6 @@ struct point addpoint(struct point p1, struct point p2)
 	return p1;
 }
 
-
-
 struct rect { /* rectangle struct. Defining a rectangle via the points of its diagonally opposite corners */
 	struct point pt1;
 	struct point pt2;

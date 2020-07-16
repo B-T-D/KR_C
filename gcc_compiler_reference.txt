@@ -33,3 +33,6 @@ Hex:
 	
 Assembler code:
 	$ objdump -d myfile
+	
+Add additional directory to search path for #include statements (i.e. you want to include something from a directory the compiler won't otherwise look in):
+	$ gcc -I path/to/directory <rest of compiler command>
