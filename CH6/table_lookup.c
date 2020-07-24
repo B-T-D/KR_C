@@ -10,7 +10,7 @@
 
 static struct nlist *hashtab[HASHSIZE]; /* pointer table */
 
-struct nlist *
+struct nlist * // A function that returns a pointer to a "struct nlist" object
 lookup(char *s)
 /* lookup: look for s in hash table hashtab 
 	
